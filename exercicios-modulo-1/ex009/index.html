@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        ol {list-style-type: decimal;}
+        ul {list-style-type: disc;}
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+
+    <h1>Trabalhando com Listas</h1> <hr>
+    <h2>Listas Ordenadas</h2>
+    <!--o uso de "type" em html está obsoleto, deve-se colocar a tag em CSS com "/style"-->
+    <ol>
+        <li>acordar</li>
+        <li>tomar café</li>
+        <li>escovar os dentes</li>
+        <li>ir a escola</li>
+    </ol>
+    <!--Fechar a tag "LI" se tornou opcional a partir do HTML5-->
+    <h2>Listas não Ordenadas</h2>
+    <ul>
+        <li>arroz</li>
+        <li>feijão</li>
+        <li>carne</li>
+        <li>salada</li>
+        <li>ovo</li>
+    </ul>
+    <h2>Juntando listas 1</h2>
+    <ol>
+        <li>lista1</li>
+    <ol>
+         <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+    </ol>
+        <li>lista2</li>
+        <ol start="4">
+            <li>item1l2</li>
+            <li>item2l2</li>
+            <li>item3l3</li>
+        </ol>
+     </ol>
+<h2>Usando "ul" e "ol"</h2>
+
+<h3>Meus jogos favoritos</h3>
+    <ol>
+        <li>NES</li>
+        <ul>
+            <li>Mario Bros</li>
+            <ul style="list-style-type: circle;">
+                <!--uso de css para estilo da marcação de itens, e acima há uma lista dentro de uma sub-lista -->
+                <li>mario1</li>
+                <li>mario2</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul>
+            <li>Mario World</li>
+            <li> Donkey Kong Country</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>Final Fantasy</li>
+            <li>Castelvania SOTN</li>
+        </ul>
+    </ol>
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a acriação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+
+    </dl>
+</body>
+</html>

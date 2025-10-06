@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <!--"style" utiliza CSS!!!-->
+    <!--este comando se aplicará a todas as tags "mark", caso não haja alterações específicas-->
+   <style>
+  mark {background-color: aqua;}
+   </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1> <hr>
+    <h2>*Negrito/Destaque</h2>
+    <p>Nesta frase, o termo em <b>Negrito/Destaque</b> foi escrito utilizando a tag "b"(não semântica, com forma, sem significado).</p>
+    <p>Nesta frase, o termo em <strong>Negrito/Destaque</strong>foi escrito utilizando a tag "strong" (Semântica,com significado.)</p>
+    <h2>*Itálico/Ênfase</h2>
+    <p>Nesta frase, o termo em <i> Itálico/Ênfase</i> foi escrito utilizando a tag "i" (Não Semântica/Forma).
+        <!-- o comando "CTRL+SHIFT+P pode ser usado para facilitar algumas funções, incluindo a inserção de tags em um texto já escrito, basta escolher a função "wrap abbreviation" e digitar a tag desejada.-->
+    </p>
+    <p>Nesta frase, o termo em <em> Itálico/Ênfase </em>foi escrito utilizando a tag "em" (Sêmantica/Significado).</p>
+    <!-- a tag "em" é uma abreviação de Emphasis.-->
+     <h2>*Texto Marcado</h2>
+     <p>é possivel criar um <mark style="background-color: blue;"> Texto marcado</mark> utilizando a tag "MARK".<p>
+     <p>E em outro parágrafo, outro <mark>texto marcado</mark> de mesma cor como exemplo.</p>
+     <p>E este é outro exemplo de <mark>texto marcado</mark>.</p>
+     <!--"STYLE" também pode ser utilizado dentro de outras tags para dar forma a apenas 1 frase/parágrafo específico, de maneira que este parágrafo específico não seja alterado pela primeira regra global, como no primeiro exemplo.-->
+     <h2>*Texto Grande e Pequeno</h2>
+     <p>este é um <big>texto gande</big> e um <small>texto pequeno</small></p>
+     <!--a tag "big" é obsoleta e não é semântica, era utilizada em HTML4-->
+     <h2>*Texto Deletado</h2>
+     <p>é possível marcar um texto como <del>deletado/excluído</del>, indicando que deve ser lido mas não considerado, para isso, basta utilizar a tag "del"</p>
+     <h2>*Texto Inserido/Sublinhado</h2>
+     <p>para marcar um <ins>Texto Sublinhado</ins>, é possível utilizar a tag "ins" (Semântica)</p>
+     <p>para marcar um <u>Texto Sublinhado</u> também é possível utilizar a tag "u" (não semântica).</p>
+     <h2>*Texto Sobrescrito</h2>
+     <p>para inserir texto sobrescrito como: x<sup>20</sup>+5, é possível utilizar a tag "sup".</p>
+     <h2>*Texto Subscrito</h2>
+     <p>para inserir texto subscrito como: H<sub>2</sub>O, é possível utilizar a tag "sub".</p>
+</body>
+</html>

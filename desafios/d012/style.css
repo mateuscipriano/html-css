@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --fonte-header: 'Verdana', 'Geneva'
+}
+
+header {
+    font-style: var(--fonte-header);
+}

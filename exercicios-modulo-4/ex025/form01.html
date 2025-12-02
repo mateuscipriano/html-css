@@ -13,12 +13,22 @@
 <body>
     <h1>Teste de formulário</h1>
 
-    <form>
-        <p>Nome: <input type="text" name="Nome" id="nome"></p>
+    <form action="formulario.php" method="get" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="Nome" id="inome"></p>
 
-        <p>Sobrenome: <input type="text" name="Sobrenome" id="sobrenome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="isobrenome"></p>
 
         <input type="submit" value="enviar">
     </form>
+
+    <!--"action" encaminha para algo
+    "label" dá sentido e une texto as caixas de texto do formulário-->
+
+    <!-- MÉTODOS
+     "get": método padrão, mostra dados enviados pelo formulario na url, utilizado em urls compartilháveis, limitado a apenas 3k bytes para envio de dados.
+     
+     "post": método alternativo, não mostra dados na url, porém não adiciona segurança nem criptografa dados, utiliza-se com dados mais sensíveis e envio de arquivos.-->
 </body>
 </html>

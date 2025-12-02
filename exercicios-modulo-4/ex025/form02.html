@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>teste de formulário</h1>
+    <form action="formulario.php" method="post">
+        <p>
+            <label for="iusu"> Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" size="15" placeholder="Nome do Usuário">
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="20" size="6" placeholder="Senha">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <!--
+        "min e max length": número de caracteres aceito pelo formulario.
+
+        "size": numero de caracteres mostrados por vez na caixa de texto do formulario, caso o limite imposto ultrapasse o tamanho da caixa, causará rolagem lateral.
+
+        "required": torna obrigatório o preenchimento de um campo para envio do formulário.
+
+        "placeholder": texto previamente escrito nos campos do formulário, nao tem valor e é apagado quando o usuário preenche o campo com seus dados.
+        -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>formulário- elementos sem input</h1>
+    <form action="teste.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP" selected> São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="iop">opções</label>
+                <input type="text" name="op" id="iop" list="lstop">
+
+                <datalist id="lstop">
+                    <option>opção1</option>
+                    <option>opção2</option>
+                    <option>opção3</option>
+                    <option>opção4</option>
+                    <!-- pode ser utilizado com ou sem value -->
+                </datalist>
+            </p>
+
+            <p>
+                <label for="itxt">texto</label> <br>
+                <textarea name="texto" id="itxt" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>

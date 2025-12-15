@@ -39,11 +39,40 @@
                 <input type="tel" name="tel" id="itel" pattern="^[0-9]{4}-[0-9]{4}$">
                 <!-- estuder regEx -->
             </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>mais elementos</legend>
+
+            <p>
+                <label for="icor">cor</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+
+            <p>
+                <label for="inivel">Nível</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5">
+            </p>
+
+            <p>
+                <label for="ifile">Arquivo</label>
+                <input type="file" name="file" id="ifile">
+                <!-- utilizando arquivos em formulário, é obrigatório utiliar o método post -->
+            </p>
+
+
+
+
+
+
+
+
+        </fieldset>
+
             <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>
-        </fieldset>
 
     </form>
 </body>

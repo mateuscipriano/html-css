@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        div.container {
+            background-color: rgb(223, 18, 18);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: grey;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div#cxa {
+           flex:0 1 250px;
+        }
+
+        div#cxb {
+           flex: 1 4 250px;
+        }
+
+        div#cxc{
+          flex: 4 2 250px;
+        }
+
+        /*
+        "Flex" = Grow + Shrink + Basis
+        */
+
+        /*
+        "flex: initial" é o padrão = "flex: 0 1 auto"
+
+        "flex: none" = "flex: 0 0 auto", tira a flexibilidade de determinado item
+
+        "flex: auto" = "flex: 1 1 auto" flexibilidade padrão para itens
+
+        "flex: 3" = "flex 3 1 auto", porque " 1 auto" é o padrão
+        */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="item" id="cxa">A</div>
+    <div class="item" id="cxb">B</div>
+    <div class="item" id="cxc">C</div>
+    </div> 
+</body>
+</html>
